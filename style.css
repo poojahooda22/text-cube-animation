@@ -1,0 +1,63 @@
+* {
+    position: relative;
+}
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#b2b2b2;
+}
+
+.textCube {
+    width: 400px;
+    height: 400px;
+}
+
+.textCube .face {
+    width: 100%;
+    height: 100%;
+    background: #1d1d1d;
+    color: #eee;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.textCube h1 {
+    margin: 0;
+    width: fit-content;
+    white-space: nowrap;
+    font-size: 250px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.textCube .side {
+    background: #090909;
+    color: #717171;
+}
+
+
+
+/* Build cube with fancy class */
+
+.fancy .side {
+    transform-origin: 100% 50%;
+    transform: translate(-100%, -100%) rotateY(-45deg)
+}
+
+.fancy .textCube {
+    perspective: 800px;
+}
