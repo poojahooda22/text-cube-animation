@@ -1,1 +1,1 @@
-text cube animation with gsap
+text cube animation with gs
